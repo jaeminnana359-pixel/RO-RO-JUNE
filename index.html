@@ -1497,19 +1497,20 @@
             flex: 0 0 auto;
             min-height: 0;
             padding-right: 0;
+            padding-left: 0;
             margin: 0;
             width: 100%;
         }
 
         .question-card .card-content img {
-            width: 100%;
-            max-width: 100%;
+            width: calc(100% + 30px);
+            max-width: calc(100% + 30px);
             height: auto;
-            max-height: 220px;
+            max-height: min(430px, 52vh);
             object-fit: contain;
             display: block;
             border-radius: 14px;
-            margin: 0 auto 12px auto;
+            margin: 0 -15px 12px -15px;
         }
 
         .question-card .quiz-options {
@@ -1672,12 +1673,12 @@
         }
 
         .card-content img {
-            max-height: 200px;
+            max-height: min(440px, 54vh);
             object-fit: contain;
             display: block;
-            margin: 8px auto;
-            width: 100%;
-            max-width: 90%;
+            margin: 8px 0 12px 0;
+            width: calc(100% + 30px);
+            max-width: calc(100% + 30px);
         }
 
         .description-card,
